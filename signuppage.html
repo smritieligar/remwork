@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Sign up page</title>
+    </head>
+    <body>
+        <section>
+            <form>
+                <h1>SIGN UP</h1><br>
+                    
+                    <button class="open-button" onclick="opnForm()">Employee</button><br><br>
+                    <div class="form-popup" id="form">
+                       
+                            
+                                <div class="inputbox">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                    <input type="email" required>
+                                    <label for ="">Email</label>
+                                </div>
+                                <div class="inputbox">
+                                    <ion-icon name="lock-closed-outline"></ion-icon>
+                                    <input type="password" required>
+                                    <label for ="">Password</label>
+                                </div>
+                                <div class="inputbox">
+                                    <ion-icon name="name-outline"></ion-icon>
+                                    <input type="name" required>
+                                    <label for ="">Name</label>
+                                </div> 
+                                <div class="inputbox">
+                                    <ion-icon name="mobile"></ion-icon>
+                                    <input type="mobile" required>
+                                    <label for ="">Mobile Number</label>
+                                </div>   
+                                <div class="forget">
+                                    <label for =""><input type="checkbox">Remember me</label>
+                                   
+                                </div>  
+
+                                <button type="submit" class="btn"><a href=loginpage.html>Login</a></button><br><br>
+                                <button type="button" class="btn cancel" onclick="clseForm()">Close</button><br><br>
+                                <div class="register">
+                                    <p>Back to login page<a href=loginpage.html>  Click here</a></p>
+                                </div>  
+                                <script>
+                                    function opnForm() {
+                                    document.getElementById("form").style.display = "block";
+                                    }
+
+                                    function clseForm() {
+                                    document.getElementById("form").style.display = "none";
+                                    }
+                                </script>
+                        </form>
+        </section>
+        <section>
+            <form>
+                <h1>SIGN UP</h1><br>
+                    
+                    <button class="open-button" onclick="opnnForm()">Employer</button><br><br>
+                    <div class="form-popup" id="Form">
+                       
+                            
+                                <div class="inputbox">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                    <input type="email" required>
+                                    <label for ="">Email</label>
+                                </div>
+                                <div class="inputbox">
+                                    <ion-icon name="lock-closed-outline"></ion-icon>
+                                    <input type="password" required>
+                                    <label for ="">Password</label>
+                                </div>
+                                <div class="inputbox">
+                                    <ion-icon name="name-outline"></ion-icon>
+                                    <input type="name" required>
+                                    <label for ="">Name</label>
+                                </div> 
+                                <div class="inputbox">
+                                    <ion-icon name="mobile"></ion-icon>
+                                    <input type="mobile" required>
+                                    <label for ="">Mobile Number</label>
+                                </div>   
+                                <div class="forget">
+                                    <label for =""><input type="checkbox">Remember me</label>
+                                    
+                                </div>  
+
+                                <button type="submit" class="btn"><a href=loginpage.html>Login</a></button><br><br>
+                                <button type="button" class="btn cancel" onclick="clsseForm()">Close</button><br><br>
+                                <div class="register">
+                                    <p>Back to Login page<a href=loginpage.html>  Click here</a></p>
+                                </div>  
+                                <script>
+                                    function opnnForm() {
+                                    document.getElementById("Form").style.display = "block";
+                                    }
+
+                                    function clsseForm() {
+                                    document.getElementById("Form").style.display = "none";
+                                    }
+                                </script>
+                        </form>
+        </section>                         
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Login page </title>
+    </head>
+    <body>
+        <section>
+            <form action="employee_database.php" method="post">
+                <h1>LOGIN</h1><br>
+                    <button class="open-button" onclick="openForm()">Employee</button><br><br>
+                    <div class="form-popup" id="myForm">
+                       
+                            
+                                <div class="inputbox">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                    <input type="email" required>
+                                    <label for ="">Email</label>
+                                </div>
+                                <div class="inputbox">
+                                    <ion-icon name="lock-closed-outline"></ion-icon>
+                                    <input type="password" required>
+                                    <label for ="">Password</label>
+                                </div>
+                               
+                                <div class="forget">
+                                    <label for =""><input type="checkbox">Remember me</label><br>
+                                    
+                                </div>  
+
+                                <button type="submit" class="btn"><a href="employeedash.html">Login</a></button><br><br>
+                                <button type="button" class="btn cancel" onclick="closeForm()">Close</button><br><br>
+                                <div class="register">
+                                    <p>Don't have an account?<a href="signuppage.html">  Sign up</a></p>
+                                </div>  
+                                <script>
+                                    function openForm() {
+                                    document.getElementById("myForm").style.display = "block";
+                                    }
+
+                                    function closeForm() {
+                                    document.getElementById("myForm").style.display = "none";
+                                    }
+                                </script>
+                        </form>
+        </section>
+        <section>
+            <form action="employer_database" method="post">
+                <h1>LOGIN</h1><br>
+                    
+                    <button class="open-button" onclick="opennForm()">Employer</button><br><br>
+                    <div class="form-popup" id="myyForm">
+                       
+                            
+                                <div class="inputbox">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                    <input type="email" required>
+                                    <label for ="">Email</label>
+                                </div>
+                                <div class="inputbox">
+                                    <ion-icon name="lock-closed-outline"></ion-icon>
+                                    <input type="password" required>
+                                    <label for ="">Password</label>
+                                </div>
+                               
+                                <div class="forget">
+                                    <label for =""><input type="checkbox">Remember me</label><br>
+                                    
+                                </div>  
+
+                               <button type="submit" class="btn"><a href="employerdash.html">Login</a></button><br><br>
+                                <button type="button" class="btn cancel" onclick="closeeForm()">Close</button><br><br>
+                                <div class="register">
+                                    <p>Don't have an account?<a href="signuppage.html">  Sign up</a></p>
+                                </div>  
+                                <script>
+                                    function opennForm() {
+                                    document.getElementById("myyForm").style.display = "block";
+                                    }
+
+                                    function closeeForm() {
+                                    document.getElementById("myyForm").style.display = "none";
+                                    }
+                                </script>
+                        </form>
+        </section>                      
+    </body>
+</html>

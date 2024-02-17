@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+    <title>Assign tasks for Employer</title>
+    <style>
+        /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url();
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+}
+
+h1 {
+    color:   #ff8080;
+    text-align: center;
+}
+
+h2 {
+    color: mediumorchid;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 5px;
+}
+p{
+    font-size: 150%;
+    color:teal;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004080;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Form Elements */
+input[type="text"],
+textarea,
+input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: indianred;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: indianred;
+}
+
+form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional Styling */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Adjustments for specific sections */
+h2:first-child {
+    margin-top: 30px;
+}
+
+h2:last-child {
+    margin-bottom: 30px;
+}
+
+    </style>
+
+</head>
+<body>
+    <h1>Assign Tasks</h1>
+
+    <h2>Employee management</h2>
+    <a href="employee.htm" target="_blank">Access to employee records</a>
+
+        <h2>Recruitment and Onboarding</h2>
+   
+        <h2>Job Postings Management</h2>
+        <p><b>Tools to manage job postings:</b></p>
+        <ul ">
+            <li><a href="#"target="_blank">Create New Job Post</a></li>
+            <li><a href="#"target="_blank">Edit Existing Postings</a></li>
+            <li><a href="#"target="_blank">Remove Job Postings</a></li>
+        </ul>
+    
+        <h2>Application Review</h2>
+        <p><b>Tools for reviewing job applications:</b></p>
+        <ul>
+            <li><a href="#"target="_blank">View Submitted Applications</a></li>
+            <li><a href="#"target="_blank">Shortlist Candidates</a></li>
+            <li><a href="#"target="_blank">Reject/Approve Applications</a></li>
+        </ul>
+   
+        <h2>Interview Scheduling</h2>
+        <p><b>Tools for scheduling interviews:</b></p>
+        <ul>
+            <li><a href="#"target="_blank">Schedule Candidate Interviews</a></li>
+            <li><a href="#"target="_blank">Send Interview Invitations</a></li>
+            <li><a href="#"target="_blank">View Interview Calendar</a></li>
+        </ul>
+
+        <h2>Onboarding Process</h2>
+        <p><b>Tools for overseeing the onboarding process:</b></p>
+        <ul class="subsection">
+            <li><a href="#"target="_blank">Prepare Onboarding Documents</a></li>
+            <li><a href="#"target="_blank">Track New Hire Progress</a></li>
+            <li><a href="#"target="_blank">Coordinate Training Sessions</a></li>
+        </ul>
+        
+        <h2>Time and Attendance Of Employees</h2>
+        <a href="timetracking.html"target="_blank">Monitoring time and attendance</a>
+
+        <h2>Company Announcements</h2>
+        <form>
+        <label for="title">Announcement Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+        
+        <label for="message">Announcement Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Send Announcement"><br><br>
+
+        <input type="submit"value="submit">
+    </form>
+</body>

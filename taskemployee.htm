@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assign tasks</title>
+        <style>
+            /* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color:lightblue;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h2 {
+    margin: 20px 0 10px;
+    color: #444;
+}
+
+h3 {
+    margin: 15px 0;
+    color: #666;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+    padding: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+a {
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+a:hover {
+    background-color:lightpink;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+/* Links */
+a.resource-link {
+    display: block;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+        </style>
+    </head>
+    <body>
+        <form>
+            <h2>Time Tracking</h2>
+            <h3>Log working hours:</h3>
+            <label for="emp">Employee Name:</label>
+            <input type="text" id="emp" name="emp" required><br><br>
+    
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+    
+            <label for="start">Start Time:</label>
+            <input type="time" id="start" name="start" required><br><br>
+    
+            <label for="end">End Time:</label>
+            <input type="time" id="end-time" name="end" required><br><br>
+    
+            <input type="submit" value="Log Hours">
+
+            <h3>Attendance history</h3>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for =""></label>
+                            <input type="date" required>
+                        </td>
+                        <td>
+                            <label for =""></label>
+                            <input type="time" required>
+                        </td>
+                        <td>
+                            <label for =""></label>
+                            <input type="time" required>
+                        </td>
+                        <td
+                        <label for="status"></label>
+                        <select id="status" name="status" form="status">
+                          <option value="present">Present</option>
+                          <option value="Absent">Absent</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for =""></label>
+                            <input type="date" required>
+                        </td>
+                        <td>
+                            <label for =""></label>
+                            <input type="time" required>
+                        </td>
+                        <td>
+                            <label for =""></label>
+                            <input type="time" required>
+                        </td>
+                        <td
+                        <label for="status"></label>
+                        <select id="status" name="status" form="status">
+                          <option value="present">Present</option>
+                          <option value="Absent">Absent</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for =""></label>
+                            <input type="date" required>
+                        </td>
+                        <td>
+                            <label for =""></label>
+                            <input type="time" required>
+                        </td>
+                        <td>
+                            <label for =""></label>
+                            <input type="time" required>
+                        </td>
+                        <td
+                        <label for="status"></label>
+                        <select id="status" name="status" form="status">
+                          <option value="present">Present</option>
+                          <option value="Absent">Absent</option>
+                        </select>
+                        </td>
+                    </tr>
+
+                    
+                    
+                </tbody>
+            </table><br>
+            <input type="submit" value="Confirm">
+
+            <h2>Task management</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Task no.</th>
+                        <th>Tasks</th>
+                        <th>Deadline</th>
+                        <th>Priority</th>
+                        <th>Progress</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Task 1</td>
+                        <td>
+                            <label for =""></label>
+                            <input type="text" required>
+                        </td>
+                        <td>
+                            <label for =""></label>
+                            <input type="date" required>
+                        </td>
+                        <td>
+                            <label for="priority"></label>
+                        <select id="priority" name="priority">
+                          <option value="high">high</option>
+                          <option value="medium">medium</option>
+                          <option value="low">low</option>
+                        </select>
+                        </td>
+                        <td>
+                            <label for="prog">:</label>
+                            <input type="range" id="prog" name="prog" min="0" max="100">
+                            <input type="submit">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Task 1</td>
+                        <td>
+                            <label for =""></label>
+                            <input type="text" required>
+                        </td>
+                        <td>
+                            <label for =""></label>
+                            <input type="date" required>
+                        </td>
+                        <td>
+                            <label for="priority"></label>
+                        <select id="priority" name="priority">
+                          <option value="high">high</option>
+                          <option value="medium">medium</option>
+                          <option value="low">low</option>
+                        </select>
+                        </td>
+                        <td>
+                            <label for="prog">:</label>
+                            <input type="range" id="prog" name="prog" min="0" max="100">
+                            <input type="submit">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Task 1</td>
+                        <td>
+                            <label for =""></label>
+                            <input type="text" required>
+                        </td>
+                        <td>
+                            <label for =""></label>
+                            <input type="date" required>
+                        </td>
+                        <td>
+                            <label for="priority"></label>
+                        <select id="priority" name="priority">
+                          <option value="high">high</option>
+                          <option value="medium">medium</option>
+                          <option value="low">low</option>
+                        </select>
+                        </td>
+                        <td>
+                            <label for="prog">:</label>
+                            <input type="range" id="prog" name="prog" min="0" max="100">
+                            <input type="submit">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Task 1</td>
+                        <td>
+                            <label for =""></label>
+                            <input type="text" required>
+                        </td>
+                        <td>
+                            <label for =""></label>
+                            <input type="date" required>
+                        </td>
+                        <td>
+                            <label for="priority"></label>
+                        <select id="priority" name="priority">
+                          <option value="high">high</option>
+                          <option value="medium">medium</option>
+                          <option value="low">low</option>
+                        </select>
+                        </td>
+                        <td>
+                            <label for="prog">:</label>
+                            <input type="range" id="prog" name="prog" min="0" max="100">
+                            <input type="submit">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Task 1</td>
+                        <td>
+                            <label for =""></label>
+                            <input type="text" required>
+                        </td>
+                        <td>
+                            <label for =""></label>
+                            <input type="date" required>
+                        </td>
+                        <td>
+                            <label for="priority"></label>
+                        <select id="priority" name="priority">
+                          <option value="high">high</option>
+                          <option value="medium">medium</option>
+                          <option value="low">low</option>
+                        </select>
+                        </td>
+                        <td>
+                            <label for="prog">:</label>
+                            <input type="range" id="prog" name="prog" min="0" max="100">
+                            <input type="submit">
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+            <h2>Conference Room Link</h2>
+            <p>You can join the conference room by clicking the link below:</p>
+            <a href="https://example.com/conference-room" target="_blank">Join Conference Room</a>
+
+            <h2>Training and Development</h2>
+
+            <p>Access training materials, courses, or resources for professional development:</p>
+    
+            <a href="https://www.coursera.org/projects/introduction-microsoft-excel" target="_blank" class="resource-link">microsoft excel Training Site</a><br>
+    
+            <a href="https://www.coursera.org/learn/cybersecurity-for-everyone" target="_blank" class="resource-link">cyber security Training Site</a>
+    
+            <p>Here are some downloadable resources:</p>
+            <a href="web.pdf" target="_blank" class="resource-link">web development course</a><br><br>
+
+            <input type="submit"value="submit">
+        </form>
+    </body>
+</html>
